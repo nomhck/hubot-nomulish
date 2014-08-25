@@ -16,7 +16,8 @@ or
 Configuration
 ----
 
-`HUBOT_NOMULISH_LEVEL` - デフォルトの翻訳レベル。`1` から `4` はノムリッシュ翻訳の強弱。`5` はラグーン語への翻訳を行なう。
+`HUBOT_NOMULISH_LEVEL` - デフォルトの翻訳レベル。`1` から `4` はノムリッシュ翻訳の強弱。(`1` が弱い)  
+`5` はラグーン語への翻訳を行なう。
 
     $ export HUBOT_NOMULISH_LEVEL='5'
 
