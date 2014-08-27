@@ -29,7 +29,7 @@ module.exports = (robot) ->
         form:
           before: words
           level: level
-          transbtn: '_'
+          trans_btn: true # 何でもよいので値を入れる
         , (e, _, body) ->
           if e?
             robot.logger.error e.message
