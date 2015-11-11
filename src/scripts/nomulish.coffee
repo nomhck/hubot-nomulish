@@ -29,7 +29,8 @@ module.exports = (robot) ->
         form:
           before: words
           level: level
-          trans_btn: true # 何でもよいので値を入れる
+          options: 'nochk'
+          transbtn: true # 何でもよいので値を入れる
         , (e, _, body) ->
           if e?
             robot.logger.error e.message
@@ -37,5 +38,5 @@ module.exports = (robot) ->
             return
 
           $ = cheerio.load body
-          nomulish = $('textarea[name=after]').val()
+          nomulish = $('textarea[name=after1]').val()
           res.send nomulish
